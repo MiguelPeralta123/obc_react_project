@@ -1,23 +1,43 @@
 import logo from './logo.svg';
 import './App.css';
+//import Greeting from './components/pure/greeting';
+//import GreetingF from './components/pure/greetingF';
+//import TaskListComponent from './components/container/task_list';
+//import { DidMount, DidMountHook } from './hooks/DidMount';
+//import { DidUpdate, DidUpdateHook } from './hooks/DidUpdate'
+import { WillUnmount, WillUnmountHook } from './hooks/WillUnmount'
 
 function App() {
   return (
     <div className="App">
+
       <header className="App-header">
+
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+
+        {/* Class component */}
+        {/*<Greeting name="Miguel"></Greeting>*/}
+
+        {/* Functional component */}
+        {/*<GreetingF name="Miguel"></GreetingF>*/}
+
+        {/* Task list component */}
+        {/*<TaskListComponent></TaskListComponent>*/}
+
+        {/* DidMount and useEffect */}
+        {/*<DidMount></DidMount>*/}
+        {/*<DidMountHook></DidMountHook>*/}
+
+        {/* DidUpdate and useEffect */}
+        {/*<DidUpdate></DidUpdate>*/}
+        {/*<DidUpdateHook></DidUpdateHook>*/}
+
+        {/* WillUnmount and useEffect */}
+        {/*<WillUnmount></WillUnmount>*/}
+        <WillUnmountHook></WillUnmountHook>
+
       </header>
+      
     </div>
   );
 }
