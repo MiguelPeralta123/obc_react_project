@@ -2,10 +2,11 @@ import logo from './logo.svg';
 import './App.css';
 //import Greeting from './components/pure/greeting';
 //import GreetingF from './components/pure/greetingF';
-//import TaskListComponent from './components/container/task_list';
+//import { TaskListComponent } from './components/container/task_list';
 //import { DidMount, DidMountHook } from './hooks/DidMount';
 //import { DidUpdate, DidUpdateHook } from './hooks/DidUpdate'
-import { WillUnmount, WillUnmountHook } from './hooks/WillUnmount'
+//import { WillUnmount, WillUnmountHook } from './hooks/WillUnmount'
+import GreetingStyled from './components/pure/greeting_styled';
 
 function App() {
   return (
@@ -34,7 +35,10 @@ function App() {
 
         {/* WillUnmount and useEffect */}
         {/*<WillUnmount></WillUnmount>*/}
-        <WillUnmountHook></WillUnmountHook>
+        {/*<WillUnmountHook></WillUnmountHook>*/}
+
+        {/* Styles with sass and ternary operators */}
+        <GreetingStyled name='Miguel'></GreetingStyled>
 
       </header>
       
