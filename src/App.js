@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 //import Greeting from './components/pure/greeting';
 //import GreetingF from './components/pure/greetingF';
@@ -6,42 +5,45 @@ import './App.css';
 //import { DidMount, DidMountHook } from './hooks/DidMount';
 //import { DidUpdate, DidUpdateHook } from './hooks/DidUpdate'
 //import { WillUnmount, WillUnmountHook } from './hooks/WillUnmount'
-import GreetingStyled from './components/pure/greeting_styled';
+//import GreetingStyled from './components/pure/greeting_styled';
+//import LoginFormik from './components/pure/forms/loginFormik';
+//import RegisterFormik from './components/pure/forms/registerFormik';
+import SignupFormik from './components/pure/forms/signupFormik';
 
 function App() {
   return (
     <div className="App">
 
-      <header className="App-header">
+      {/* Class component */}
+      {/*<Greeting name="Miguel"></Greeting>*/}
 
-        <img src={logo} className="App-logo" alt="logo" />
+      {/* Functional component */}
+      {/*<GreetingF name="Miguel"></GreetingF>*/}
 
-        {/* Class component */}
-        {/*<Greeting name="Miguel"></Greeting>*/}
+      {/* Task list component */}
+      {/* <TaskListComponent></TaskListComponent> */}
 
-        {/* Functional component */}
-        {/*<GreetingF name="Miguel"></GreetingF>*/}
+      {/* DidMount and useEffect */}
+      {/*<DidMount></DidMount>*/}
+      {/*<DidMountHook></DidMountHook>*/}
 
-        {/* Task list component */}
-        {/*<TaskListComponent></TaskListComponent>*/}
+      {/* DidUpdate and useEffect */}
+      {/*<DidUpdate></DidUpdate>*/}
+      {/*<DidUpdateHook></DidUpdateHook>*/}
 
-        {/* DidMount and useEffect */}
-        {/*<DidMount></DidMount>*/}
-        {/*<DidMountHook></DidMountHook>*/}
+      {/* WillUnmount and useEffect */}
+      {/*<WillUnmount></WillUnmount>*/}
+      {/*<WillUnmountHook></WillUnmountHook>*/}
 
-        {/* DidUpdate and useEffect */}
-        {/*<DidUpdate></DidUpdate>*/}
-        {/*<DidUpdateHook></DidUpdateHook>*/}
+      {/* Styles with sass and ternary operators */}
+      {/*<GreetingStyled name='Miguel'></GreetingStyled>*/}
 
-        {/* WillUnmount and useEffect */}
-        {/*<WillUnmount></WillUnmount>*/}
-        {/*<WillUnmountHook></WillUnmountHook>*/}
+      {/* Form with Formik */}
+      {/* <RegisterFormik></RegisterFormik> */}
 
-        {/* Styles with sass and ternary operators */}
-        <GreetingStyled name='Miguel'></GreetingStyled>
+      {/* Form with Formik and Yup */}
+      <SignupFormik></SignupFormik>
 
-      </header>
-      
     </div>
   );
 }
